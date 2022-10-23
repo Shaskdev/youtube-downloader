@@ -20,7 +20,7 @@ def cleanup():
     os.remove('/home/shask/Code/Python/youtube-downloader/video.mp4')
     print("Video File Removed")
     os.rename('/home/shask/Code/Python/youtube-downloader/audio.mp3',
-              '/home/shask/audio-files/audio.mp3')
+              '/home/shask/audio-files/' + clean_filename(yt.title) + ".mp3")
     print("Audio File moved to Audio Folder")
 
 
